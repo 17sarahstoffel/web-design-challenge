@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
 
-    <!-- Creating the title of the website -->
-    <title>Weather vs Latitude Analysis</title>
+    <!-- Creating the title of the webpage -->
+    <title>Max Temperature</title>
 
     <!-- Viewport readable for Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +19,7 @@
     <!-- Creating the NavBar -->
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="landing.html">Latitude</a>
+          <a class="navbar-brand" href="../landing.html">Latitude</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -29,11 +29,11 @@
                 <a class="nav-link active" href="#">Comparsion</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdownlink" role="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Plots
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownlink">
-                  <li><a class="dropdown-item" href="visualizations/max_temp.html">Max Temperature</a></li>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Max Temperature</a></li>
                   <li><a class="dropdown-item" href="#">Humidity</a></li>
                   <li><a class="dropdown-item" href="#">Cloudiness</a></li>
                   <li><a class="dropdown-item" href="#">Wind Speed</a></li>
@@ -47,52 +47,21 @@
         </div>
       </nav>
 
-    <!-- Creating the space for the summary -->
-    <div class="container">
+      <!-- adding the max temp image -->
+      <div class="content">
         <div class="row">
-            <div class="col-md-6">
-                <h1>Summary</h1>
-                <img src="assets/images/temp_v_lat.png">
-                <p>this is wher the 1st paragraph of data will go</p>
-                <br>
-                <p>this is where the second paragraph will go</p>
-            </div>
-
-            <!-- Creating the sidebar -->
-            <div class="col-md-6">
-                <div class="row">
-                    <h2>Visualizations</h2>
+            <div class="col">
+                <div class="header">
+                    <h1>Max Temperature</h1>
                 </div>
                 <div class="content">
-                    <div class="col-6">
-                        <a href="visualizations/max_temp.html">
-                            <img src="assets/images/temp_v_lat.png" alt="Max Temperature">
-                        </a>
-                    </div>
+                    <img src="../assets/images/temp_v_lat.png" alt="Max Temperature">
+                    <p>this is where I will put info</p>
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-
-
-
-
-
-
+      </div>
 </body>
-
-
-
-
-
-
-
-
-
-
 
 
 
