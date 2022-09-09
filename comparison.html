@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather vs. Latitude Analysis</title>
+
+    <!-- Set the viewport the way Bootstrap likes it -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bring in the Bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Bring in our own stylesheet, AFTER Bootstrap  -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="landing.html">Latitude</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="comparison.html">Comparsion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="data.html">Data</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Plots
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="visualizations/max_temp.html">Max Temperature</a></li>
+              <li><a class="dropdown-item" href="visualizations/humidity.html">Humidity</a></li>
+              <li><a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="visualizations/wind_speed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Create the comparison grid -->
+  <div class="row">
+    <div>
+        <div class="box">
+            <h3>Comparisons</h3>
+            <p>Click on any visualization to find more information!</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="container text-center">
+    <div class="row row-cols-2">
+      <div class="col">
+        <h3>Max Temperature</h3>
+        <a href="visualizations/max_temp.html">
+            <img src="assets/images/temp_v_lat.png" alt="Max Temperature">
+        </a>
+      </div>
+
+      <div class="col">
+        <h3>Humidity</h3>
+        <a href="visualizations/humidity.html">
+            <img src="assets/images/humidity_v_lat.png" alt="Humidity">
+        </a>
+      </div>
+
+      <div class="col">
+        <h3>Cloudiness</h3>
+        <a href="visualizations/cloudiness.html">
+            <img src="assets/images/clouds_v_lat.png" alt="Cloudiness">
+        </a>
+      </div>
+
+      <div class="col">
+        <h3>Wind Speed</h3>
+        <a href="visualizations/wind_speed.html">
+            <img src="assets/images/wind_v_lat.png" alt="Wind Speed">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- <div class="container">
+    <div class="row">
+        <div>
+            <div class="box">
+                <h3>Comparisons</h3>
+                <p>Click on any visualization to find more information!</p>
+                <div class="container style=padding-bottom: 40px">
+                    <div class="row>">
+                        <div class="col-lg-6" style="padding: 30px;">
+                            <h3>Max Temperature</h3>
+                            <a href="visualizations/max_temp.html">
+                                <img src="assets/images/temp_v_lat.png" alt="Max Temperature">
+                            </a>
+                        </div>
+                        <div class="col-lg-6" style="padding: 30px;" >
+                            <h3>Humidity</h3>
+                            <a href="visualizations/humidity.html">
+                                <img src="assets/images/humidity_v_lat.png" alt="Humidity">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row>">
+                        <div class="col-lg-6" style="padding: 30px;">
+                            <h3>Cloudiness</h3>
+                            <a href="visualizations/cloudiness.html">
+                                <img src="assets/images/clouds_v_lat.png" alt="Cloudiness">
+                            </a>
+                        </div>
+                        <div class="col-lg-6" style="padding: 30px;">
+                            <h3>Wind Speed</h3>
+                            <a href="visualizations/wind_speed.html">
+                                <img src="assets/images/wind_v_lat.png" alt="Wind Speed">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+  <!-- Import the Bootstrap JavaScript code -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
