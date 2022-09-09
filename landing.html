@@ -1,82 +1,82 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Weather vs. Latitude Analysis</title>
 
-    <!-- Creating the title of the website -->
-    <title>Weather vs Latitude Analysis</title>
-
-    <!-- Viewport readable for Bootstrap -->
+    <!-- Set the viewport the way Bootstrap likes it -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- linking to bootstrap stylesheet -->
+    <!-- Bring in the Bootstrap stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-</head>
+    <!-- Bring in our own stylesheet, AFTER Bootstrap  -->
+    <link rel="stylesheet" href="style.css">
+  </head>
 
 <body>
-    <!-- Creating the NavBar -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="landing.html">Latitude</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Comparsion</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdownlink" role="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
-                  Plots
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownlink">
-                  <li><a class="dropdown-item" href="visualizations/max_temp.html">Max Temperature</a></li>
-                  <li><a class="dropdown-item" href="#">Humidity</a></li>
-                  <li><a class="dropdown-item" href="#">Cloudiness</a></li>
-                  <li><a class="dropdown-item" href="#">Wind Speed</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Data</a>
-              </li>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Latitude</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Comparsion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Data</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Plots
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Max Temperature</a></li>
+              <li><a class="dropdown-item" href="#">Humidity</a></li>
+              <li><a class="dropdown-item" href="#">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="#">Wind Speed</a></li>
             </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Creating the space for the summary -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Summary</h1>
+          <img src="assets/images/temp_v_lat.png">
+          <p>this is wher the 1st paragraph of data will go</p>
+          <br>
+          <p>this is where the second paragraph will go</p>
+      </div>
+
+      <!-- Creating the sidebar -->
+      <div class="col-md-6">
+        <div class="row">
+          <h2>Visualizations</h2>
+        </div>
+        <div class="content">
+          <div class="col-6">
+            <a href="visualizations/max_temp.html">
+            <img src="assets/images/temp_v_lat.png" alt="Max Temperature">
+            </a>
           </div>
         </div>
-      </nav>
-
-    <!-- Creating the space for the summary -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h1>Summary</h1>
-                <img src="assets/images/temp_v_lat.png">
-                <p>this is wher the 1st paragraph of data will go</p>
-                <br>
-                <p>this is where the second paragraph will go</p>
-            </div>
-
-            <!-- Creating the sidebar -->
-            <div class="col-md-6">
-                <div class="row">
-                    <h2>Visualizations</h2>
-                </div>
-                <div class="content">
-                    <div class="col-6">
-                        <a href="visualizations/max_temp.html">
-                            <img src="assets/images/temp_v_lat.png" alt="Max Temperature">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 
 
 
-
+  <!-- Import the Bootstrap JavaScript code -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 
 
